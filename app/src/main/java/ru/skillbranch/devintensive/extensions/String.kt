@@ -8,10 +8,6 @@ fun String.truncate(value: Int = 16): String {
             this.take(value-1).padEnd(value-1 + 3, '.')
         else
             this.take(value).padEnd(value + 3, '.')
-//    return if (this.substringAfterLast(" ") != "")
-//        this.substring(0, value).padEnd(value + 3, '.')
-//    else
-//        this.substring(0, value).substringBeforeLast(" ")
 }
 
 fun String.stripHtml(): String {
