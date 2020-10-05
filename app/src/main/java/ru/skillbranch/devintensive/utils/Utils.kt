@@ -11,9 +11,6 @@ object Utils {
     }
 
     fun transliteration(payload: String, divider: String = " "): String {
-//        var first = payload.substringBefore(" ")
-//        var last = payload.substringAfter(" ")
-
         var newName = payload.toLowerCase().replace(Regex("[абвгдеёжзийклмнопрстуфхцчшщъыьэюя]")) {
             when (it.value) {
                 "а" -> "a"
