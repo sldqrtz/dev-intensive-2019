@@ -14,7 +14,7 @@ const val DAY = 24 * HOUR
 enum class TimeUnits {
     SECOND {
         override fun plural(value: Int): String {
-            return if (value % 10 == 1 && value != 11) "$value секунда"
+            return if (value % 10 == 1 && value != 11) "$value секунду"
             else if (value % 10 == 2 || value % 10 == 3 || value % 10 == 4) "$value секунды"
             else "$value секунд"
         }
