@@ -21,7 +21,7 @@ enum class TimeUnits {
     },
     MINUTE {
         override fun plural(value: Int): String {
-            return if (value % 10 == 1 && value != 11) "$value минута"
+            return if (value % 10 == 1 && value != 11) "$value минуту"
             else if (value % 10 == 2 || value % 10 == 3 || value % 10 == 4) "$value минуты"
             else "$value минут"
         }
