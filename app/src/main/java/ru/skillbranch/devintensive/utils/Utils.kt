@@ -50,7 +50,7 @@ object Utils {
             }
         }
 
-        return "${newName.substringBefore(" ").capitalize()}$divider${newName.substringAfter(" ").capitalize()}"
+        return newName.replace(" ", divider)
     }
 
     fun toInitials(firstName: String?, lastName: String?): String? {
